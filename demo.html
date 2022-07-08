@@ -2,7 +2,7 @@
 <html>
 <body>
 <p> select a fashion from the list </p>
-<select id="mySlect" onchange="do_something()" >
+<select id="mySelect" onchange="do_something()" >
     <option value = "ARISTINO">ARISTINO</option>
     <option value = "CHANEL">CHANEL</option>
     <option value = "DIOR">DIOR</option>
@@ -13,7 +13,7 @@
 </select>
 <script>
     function do_something(){
-        var selectValue = document.getSelection("mySelect").value;
+        var selectValue = document.getElementById("mySelect").value;
         alert(selectValue);
     }
 // var selectElement = document.getElementById("mySlect");
