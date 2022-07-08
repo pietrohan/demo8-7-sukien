@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p id="demo" onclick="do_something()">click me</p>
+<p id="demo2">click</p>
+
+
+</body>
+</html>
+<script>
+
+    function do_something(){
+        alert("hello world")
+    }
+    var demo2 = document.getElementById("demo2");
+    demo2.addEventListener("click",clickFuntion);
+    function  clickFuntion(){
+        alert("xin chào");
+    }
+    var demo = document.getElementById("demo");
+    demo.addEventListener("click",clickFuntion);
+    var demo = document.getElementById("demo");
+    demo.addEventListener("mouseover",mouseover);
+    demo.addEventListener("mouseout",mouseout);
+    function mouseover() {
+        document.getElementById("demo").style.color="red";
+    }
+    function mouseout(){
+        document.getElementById("demo").style.color="black";
+    }
+</script>

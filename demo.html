@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p> select a fashion from the list </p>
+<select id="mySlect" onchange="do_something()" >
+    <option value = "ARISTINO">ARISTINO</option>
+    <option value = "CHANEL">CHANEL</option>
+    <option value = "DIOR">DIOR</option>
+    <option value = "GUCCI">GUCCI</option>
+    <option value = "UNIQILO">UNIQILO</option>
+    <option value = "JOHN HENRRY">JOHN HENRRY</option>
+    <option value = "LOUIS VUITTON">LOUIS VUITTON</option>
+</select>
+<script>
+    function do_something(){
+        var selectValue = document.getSelection("mySelect").value;
+        alert(selectValue);
+    }
+// var selectElement = document.getElementById("mySlect");
+//     selectElement.addEventListener("change",changeFunction);
+//     function changeFunction()
+//     {
+//         var selectValue = document.getElementById("mySlect").value;
+//         alert(selectValue);
+//     }
+</script>
+</body>
+</html>

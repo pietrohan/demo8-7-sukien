@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--onmouseover="mouseover()" onmouseout="mouseout()"-->
+<p id="demo"> this is a demo event </p>
+<script>
+    var demo = document.getElementById("demo");
+    demo.addEventListener("mouseover",mouseover);
+    demo.addEventListener("mouseout",mouseout);
+    function mouseover() {
+        document.getElementById("demo").style.color="red";
+    }
+     function mouseout(){
+        document.getElementById("demo").style.color="black";
+     }
+</script>
+</body>
+</html>
